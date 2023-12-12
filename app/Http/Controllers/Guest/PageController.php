@@ -12,5 +12,11 @@ class PageController extends Controller
 
         $movies = Movie::all();
         return view('homepage',compact('movies'));
+        
+    }
+    public function american() {
+        $americanMovies = Movie::where('nationality','american')->get();
+        return view('onlyamerican',compact('americanMovies'));
+
     }
 }

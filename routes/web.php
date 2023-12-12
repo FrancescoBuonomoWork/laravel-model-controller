@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/',[PageController::class,'index']);
+Route::get('/',[PageController::class,'index'])->name('homepage');
+
+Route::get('/onlyamerican',[PageController::class,'american'])->name('onlyamerican');
