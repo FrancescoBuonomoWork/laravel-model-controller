@@ -7,7 +7,7 @@
                     <ul class="d-flex gap-5">
                         <li><a href="{{route('onlyamerican')}}">only american</a></li>
                         <li>b</li>
-                        <li>c</li>
+                        <li><a href="{{route('topfilm')}}">topfilm</a></li>
                     </ul>
                 </nav>
 

@@ -19,4 +19,9 @@ class PageController extends Controller
         return view('onlyamerican',compact('americanMovies'));
 
     }
+    public function top() {
+        $movies = Movie::orderBy('vote','desc')->get();
+        return view('topfilm',compact('movies'));
+
+    }
 }
